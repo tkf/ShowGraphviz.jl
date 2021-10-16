@@ -1,0 +1,12 @@
+name = "ShowGraphvizTests"
+uuid = "8fae9341-98ff-4d90-97f0-805ed17700d6"
+authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
+version = "0.1.0-DEV"
+
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+ShowGraphviz = "14e20f5a-e304-4f94-b7d9-bca841234ddf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1"
