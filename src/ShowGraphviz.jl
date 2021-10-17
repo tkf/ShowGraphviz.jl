@@ -29,10 +29,10 @@ include("derive.jl")
 
 # Use README as the docstring of the module:
 function define_docstring()
-    @eval @doc let path = joinpath(dirname(@__DIR__), "README.md")
-        include_dependency(path)
-        replace(read(path, String), r"^```julia"m => "```jldoctest README")
-    end ShowGraphviz
+    path = joinpath(dirname(@__DIR__), "README.md")
+    include_dependency(path)
+    doc = replace(read(path, String), r"^```julia"m => "```jldoctest README")
+    @eval ShowGraphviz $Base.@doc $doc ShowGraphviz
 end
 
 end  # module Internal
