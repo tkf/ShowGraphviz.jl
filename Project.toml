@@ -3,9 +3,6 @@ uuid = "14e20f5a-e304-4f94-b7d9-bca841234ddf"
 authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
 version = "0.1.0-DEV"
 
-[deps]
-Graphviz_jll = "3c863552-8265-54e4-a6dc-903eb78fde85"
-
 [compat]
 julia = "1"
 
