@@ -33,7 +33,6 @@ highlight_dot(io::IO, input::AbstractString) = highlight_dot(io, IOBuffer(input)
 function highlight_dot(io::IO, input::IO)
     cmd = CONFIG.pygmentize
     if !supports_graphviz(cmd) || get(io, :color, false) === false
-        # TODO: check pygmentize version?
         write(io, input)
     else
         cmd = `$cmd $(CONFIG.pygmentize_option)`
